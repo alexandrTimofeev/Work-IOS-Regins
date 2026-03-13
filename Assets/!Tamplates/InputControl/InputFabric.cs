@@ -33,9 +33,9 @@ public static class InputFabric
         return input;
     }
 
-#if UNITY_EDITOR
-    public static bool IsSimulatorView()        
+    public static bool IsSimulatorView()
     {
+#if UNITY_EDITOR
         // Быстрая проверка: если Input сообщает о поддержке тача и это не мобильная платформа
         if (Input.touchSupported && !Application.isMobilePlatform)
             return true;
@@ -113,6 +113,8 @@ public static class InputFabric
         }
 
         return false;
-    }
+#else
+        return false;
 #endif
+    }
 }
