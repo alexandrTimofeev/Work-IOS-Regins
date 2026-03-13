@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7dc7510d721b0488c13e58c4157800, type: 3}
+  m_Name: AchievimentsData
+  m_EditorClassIdentifier: 
+  allAchiviements:
+  - Name: People_Downfull
+    Info:
+      ID: People_Downfull
+      Title: Rebellion
+      InfoTxt: 'Get the ending: Rebellion'
+      spriteYes: {fileID: 21300000, guid: 68e1f3d1470827b49b3b3347af0e4f6d, type: 3}
+      spriteNo: {fileID: 21300000, guid: 68e1f3d1470827b49b3b3347af0e4f6d, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695332
+  - Name: People_Overfull
+    Info:
+      ID: People_Overfull
+      Title: Populists
+      InfoTxt: 'Get the ending: Populists Replace the Emperor'
+      spriteYes: {fileID: 21300000, guid: 87a7c4321fd50514c8e41d6779a071da, type: 3}
+      spriteNo: {fileID: 21300000, guid: 87a7c4321fd50514c8e41d6779a071da, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695345
+  - Name: Army_Downfull
+    Info:
+      ID: Army_Downfull
+      Title: Empire Collapsed
+      InfoTxt: 'Get the ending: Empire Collapsed'
+      spriteYes: {fileID: 21300000, guid: 2ddf0348701148a4d8a7c6a0f7f146b3, type: 3}
+      spriteNo: {fileID: 21300000, guid: 2ddf0348701148a4d8a7c6a0f7f146b3, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695334
+  - Name: Army_Overfull
+    Info:
+      ID: Army_Overfull
+      Title: Military Coup
+      InfoTxt: 'See the ending: Military Coup'
+      spriteYes: {fileID: 21300000, guid: 95052c6b62fb3de4695beaa99f842ac2, type: 3}
+      spriteNo: {fileID: 21300000, guid: 95052c6b62fb3de4695beaa99f842ac2, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695346
+  - Name: Gold_Downfull
+    Info:
+      ID: Gold_Downfull
+      Title: Merchants Power
+      InfoTxt: 'Get the ending: Merchants Seize Power'
+      spriteYes: {fileID: 21300000, guid: 68f03904aa02ba244a61e03fee3f6293, type: 3}
+      spriteNo: {fileID: 21300000, guid: 68f03904aa02ba244a61e03fee3f6293, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695336
+  - Name: Gold_Overfull
+    Info:
+      ID: Gold_Overfull
+      Title: "Emperor\u2019s Greed"
+      InfoTxt: "Get the ending: Emperor\u2019s Greed"
+      spriteYes: {fileID: 21300000, guid: 39d66829824cb1d4da958035ee18213a, type: 3}
+      spriteNo: {fileID: 21300000, guid: 39d66829824cb1d4da958035ee18213a, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695347
+  - Name: Senate_Downfull
+    Info:
+      ID: Senate_Downfull
+      Title: Senate Rebellion
+      InfoTxt: 'Get the ending: Senate Against the Emperor'
+      spriteYes: {fileID: 21300000, guid: 615ecf391b0ba0b40a9c3882ac5e6afc, type: 3}
+      spriteNo: {fileID: 21300000, guid: 615ecf391b0ba0b40a9c3882ac5e6afc, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695338
+  - Name: Senate_Overfull
+    Info:
+      ID: Senate_Overfull
+      Title: Senate Puppet
+      InfoTxt: 'Get the ending: Senate Turns Puppet'
+      spriteYes: {fileID: 21300000, guid: 5319e90cdef08eb4a90ed29d73271916, type: 3}
+      spriteNo: {fileID: 21300000, guid: 5319e90cdef08eb4a90ed29d73271916, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695348
+  - Name: Survive 10
+    Info:
+      ID: Survive_10
+      Title: Survive 10
+      InfoTxt: Survive 10 days
+      spriteYes: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      spriteNo: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695366
+  - Name: Survive 30
+    Info:
+      ID: Survive_30
+      Title: Survive 30
+      InfoTxt: Survive 30 days
+      spriteYes: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      spriteNo: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695365
+  - Name: Survive 50
+    Info:
+      ID: Survive_50
+      Title: Survive 50
+      InfoTxt: Survive 50 days
+      spriteYes: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      spriteNo: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695364
+  - Name: Survive 100
+    Info:
+      ID: Survive_100
+      Title: Survive 100
+      InfoTxt: Survive 100 days
+      spriteYes: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      spriteNo: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695363
+  - Name: Survive 150
+    Info:
+      ID: Survive_150
+      Title: Survive 150
+      InfoTxt: Survive 150 days
+      spriteYes: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      spriteNo: {fileID: 21300000, guid: b227c6c1c35b36940b602110d9556b13, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695353
+  - Name: Survive 200
+    Info:
+      ID: Survive_200
+      Title: Survive 200
+      InfoTxt: Survive 200 days
+      spriteYes: {fileID: 21300000, guid: 6509adb73ba1de04d898264b898cdf2e, type: 3}
+      spriteNo: {fileID: 21300000, guid: 6509adb73ba1de04d898264b898cdf2e, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695362
+  - Name: All Achieviments
+    Info:
+      ID: AllAchieviments
+      Title: All Achieviments
+      InfoTxt: Get all achieviments
+      spriteYes: {fileID: 21300000, guid: 394899dbf2938874ca7d1025f7598406, type: 3}
+      spriteNo: {fileID: 21300000, guid: 394899dbf2938874ca7d1025f7598406, type: 3}
+      colorYes: {r: 1, g: 1, b: 1, a: 1}
+      colorNo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    achievementBehaviour:
+      rid: 7067667600486695356
+  references:
+    version: 2
+    RefIds:
+    - rid: 7067667600486695332
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: People_Downfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695334
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Army_Downfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695336
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Gold_Downfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695338
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Senate_Downfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695345
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: People_Overfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695346
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Army_Overfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695347
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Gold_Overfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695348
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Senate_Overfull
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695353
+      type: {class: SimpleAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive_150
+        ProgressType: 0
+        EndValue: 1
+    - rid: 7067667600486695356
+      type: {class: PlatinaAchievementBehaviour, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: AllAchieviments
+        ProgressType: 0
+        EndValue: 0
+        idsBehavioursTest: []
+    - rid: 7067667600486695362
+      type: {class: SurviveAchivBeh, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive_200
+        ProgressType: 0
+        EndValue: 0
+        SurvivePrefsName: Survive
+        TargetCount: 200
+    - rid: 7067667600486695363
+      type: {class: SurviveAchivBeh, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive_100
+        ProgressType: 0
+        EndValue: 0
+        SurvivePrefsName: Survive
+        TargetCount: 100
+    - rid: 7067667600486695364
+      type: {class: SurviveAchivBeh, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive_50
+        ProgressType: 0
+        EndValue: 0
+        SurvivePrefsName: Survive
+        TargetCount: 50
+    - rid: 7067667600486695365
+      type: {class: SurviveAchivBeh, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive
+        ProgressType: 0
+        EndValue: 0
+        SurvivePrefsName: Survive
+        TargetCount: 30
+    - rid: 7067667600486695366
+      type: {class: SurviveAchivBeh, ns: , asm: Assembly-CSharp}
+      data:
+        IDBehaviour: Survive_10
+        ProgressType: 0
+        EndValue: 0
+        SurvivePrefsName: Survive
+        TargetCount: 10

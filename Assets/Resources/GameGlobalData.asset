@@ -1,0 +1,436 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774f80d0a36a6174dab514304495ccbd, type: 3}
+  m_Name: GameGlobalData
+  m_EditorClassIdentifier: 
+  data:
+    R1Container:
+      Title: People
+      _value: 50
+      _clampRange: {x: 1, y: 99}
+    R2Container:
+      Title: Army
+      _value: 50
+      _clampRange: {x: 1, y: 99}
+    R3Container:
+      Title: Gold
+      _value: 50
+      _clampRange: {x: 1, y: 99}
+    R4Container:
+      Title: Senate
+      _value: 50
+      _clampRange: {x: 1, y: 99}
+    LoseCardEvents:
+    - EventID: People_Downfull
+      EventImageID: CityInFire
+      CharacterID: Dead
+      Title: Rebellion
+      Text: Crowds fill the streets, anger and discontent tear apart the old order.
+        The emperor no longer controls the plebs; chaos engulfs Rome.
+      LeftText: Accept Doom
+      RightText: Accept Doom
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: People_Overfull
+      EventImageID: Popular
+      CharacterID: Lose
+      Title: Populists Replace the Emperor
+      Text: "Under the pressure of the crowd, the old orders collapse, the plebs
+        shape Rome\u2019s fate, and the emperor\u2019s power vanishes."
+      LeftText: Accept Defeat
+      RightText: Accept Defeat
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Army_Downfull
+      EventImageID: Legion
+      CharacterID: Lose
+      Title: Empire Collapsed
+      Text: Legions have scattered across the provinces; there is no longer strength
+        to hold the borders, and enemies are already raising armies against Rome.
+      LeftText: Accept Defeat
+      RightText: Accept Defeat
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Army_Overfull
+      EventImageID: Legion
+      CharacterID: Dead
+      Title: Military Coup
+      Text: Generals have amassed too much power and stage a revolt. The iron discipline
+        of the legions has become a threat to the emperor himself.
+      LeftText: Accept Doom
+      RightText: Accept Doom
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Gold_Downfull
+      EventImageID: Street
+      CharacterID: Dead
+      Title: Merchants Seize Power
+      Text: "The treasury is empty\u2014no one wishes to obey anymore. Merchants
+        take control, and the empire loses influence and resources, betraying the
+        emperor."
+      LeftText: Accept Doom
+      RightText: Accept Doom
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Gold_Overfull
+      EventImageID: Inside
+      CharacterID: Dead
+      Title: "Emperor\u2019s Greed"
+      Text: "The treasury is full\u2014you are accused of greed and overthrown in
+        favor of another ruler. The people and senators lose trust; the treasury
+        becomes a source of intrigue and downfall."
+      LeftText: Accept Doom
+      RightText: Accept Doom
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Senate_Downfull
+      EventImageID: Inside
+      CharacterID: Dead
+      Title: Senate Against the Emperor
+      Text: The Senate declares the emperor an enemy of the republic. Aristocrats
+        rebel, laws are not passed, and the emperor loses support in the halls of
+        powe
+      LeftText: Accept Doom
+      RightText: Accept Doom
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    - EventID: Senate_Overfull
+      EventImageID: Inside
+      CharacterID: Lose
+      Title: Senate Turns Puppet
+      Text: "The Senate limits the emperor\u2019s power and turns him into a puppet.
+        Aristocrats rule the country behind the ruler\u2019s back, and Rome loses
+        real central authority."
+      LeftText: Accept Defeat
+      RightText: Accept Defeat
+      LeftResources: 
+      RightResources: 
+      NextLeft: GameOver
+      NextRight: GameOver
+      Weight: 0
+      Condition: 
+      onlyChoiceThisCard: 0
+      WaitToPlay: 0
+    ReigsUIData:
+      ImageCharacter:
+      - ID: Senator
+        Sprite: {fileID: -1556490916, guid: 82699532c666c7943b0b888d126fdceb, type: 3}
+      - ID: People
+        Sprite: {fileID: -1971088106, guid: 82699532c666c7943b0b888d126fdceb, type: 3}
+      - ID: General
+        Sprite: {fileID: 2105149912, guid: 82699532c666c7943b0b888d126fdceb, type: 3}
+      - ID: Priest
+        Sprite: {fileID: 795133881, guid: 82699532c666c7943b0b888d126fdceb, type: 3}
+      - ID: GladiatorMaster
+        Sprite: {fileID: 1476746019, guid: 3e44eb321cf66204b95f74caef5b33c3, type: 3}
+      - ID: Merchant
+        Sprite: {fileID: 1168765234, guid: 3e44eb321cf66204b95f74caef5b33c3, type: 3}
+      - ID: Scout
+        Sprite: {fileID: 1809700147, guid: 3e44eb321cf66204b95f74caef5b33c3, type: 3}
+      - ID: Spy
+        Sprite: {fileID: -1801388206, guid: 3e44eb321cf66204b95f74caef5b33c3, type: 3}
+      - ID: Dead
+        Sprite: {fileID: 1733745887, guid: 1942fd6cfd5c2004f8cf96d1088824dc, type: 3}
+      - ID: Lose
+        Sprite: {fileID: 724430058, guid: 1942fd6cfd5c2004f8cf96d1088824dc, type: 3}
+      - ID: Assassin
+        Sprite: {fileID: -1200642885, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Legioner
+        Sprite: {fileID: -610456034, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Legioner2
+        Sprite: {fileID: 377967146, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: MagicWoman
+        Sprite: {fileID: 610219623, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Navy
+        Sprite: {fileID: -615087456, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: People_Angry
+        Sprite: {fileID: 2063841981, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: People_Sick
+        Sprite: {fileID: 986995712, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: People_Philosopher
+        Sprite: {fileID: -963038079, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Son
+        Sprite: {fileID: 502519583, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Wife
+        Sprite: {fileID: 1744340889, guid: f43b0f3417556714b91e47d0b4e518b6, type: 3}
+      - ID: Treasurer
+        Sprite: {fileID: -1470855818, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Astronomer
+        Sprite: {fileID: -322631832, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Ambassador
+        Sprite: {fileID: -1543107326, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Engineer
+        Sprite: {fileID: 1919809085, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Governor
+        Sprite: {fileID: -1682836552, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Healer
+        Sprite: {fileID: 1465211596, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Poet
+        Sprite: {fileID: -817824424, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Prophet
+        Sprite: {fileID: 1307857613, guid: 192658f59eb9dfa41ad3a0cc2eaa62ed, type: 3}
+      - ID: Tribune
+        Sprite: {fileID: 1356334034, guid: f15a450305cd2284e84579839155395f, type: 3}
+      - ID: Gladiator
+        Sprite: {fileID: -848131581, guid: 192658f59eb9dfa41ad3a0cc2eaa62ed, type: 3}
+      - ID: ISimple
+        Sprite: {fileID: 1767920166, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: ITyran
+        Sprite: {fileID: 2020579236, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: IPopulist
+        Sprite: {fileID: 308910272, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: ISchmer
+        Sprite: {fileID: -1620811041, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: IDiplomat
+        Sprite: {fileID: 1461979391, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: IGreat
+        Sprite: {fileID: -1831479852, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      - ID: ISurvivor
+        Sprite: {fileID: -1774660304, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      ImageBackground:
+      - ID: Legion
+        Sprite: {fileID: 1125768706, guid: ff8054117b4488e4ebcdc17444ce9a44, type: 3}
+      - ID: Gold
+        Sprite: {fileID: -700975905, guid: ff8054117b4488e4ebcdc17444ce9a44, type: 3}
+      - ID: CityInFire
+        Sprite: {fileID: -54568124, guid: ff8054117b4488e4ebcdc17444ce9a44, type: 3}
+      - ID: Popular
+        Sprite: {fileID: -1341617019, guid: ff8054117b4488e4ebcdc17444ce9a44, type: 3}
+      - ID: Beed
+        Sprite: {fileID: -1652032463, guid: 5fcca1d391e0cf54eb97d22c94bd7e4b, type: 3}
+      - ID: Collision
+        Sprite: {fileID: 1873818980, guid: 5fcca1d391e0cf54eb97d22c94bd7e4b, type: 3}
+      - ID: Inside
+        Sprite: {fileID: -1943427626, guid: 5fcca1d391e0cf54eb97d22c94bd7e4b, type: 3}
+      - ID: Street
+        Sprite: {fileID: 665829556, guid: 5fcca1d391e0cf54eb97d22c94bd7e4b, type: 3}
+    CharactersPlayer:
+    - ID: Simple
+      Name: Simple
+      Portrait: {fileID: 1767920166, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 50
+      R2: 50
+      R3: 50
+      R4: 50
+      AchivForOpen: None
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: ISimple
+        Title: New Imperator
+        Text: The last emperor is gone. The Senate crowns you as a safe pair of hands.
+          Rome expects calm rule, steady judgment, and balance.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Tyran
+      Name: Tyran
+      Portrait: {fileID: 2020579236, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 25
+      R2: 75
+      R3: 75
+      R4: 25
+      AchivForOpen: Army_Overfull
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: ITyran
+        Title: New Imperator
+        Text: Blood still stains the palace steps. The legions kneel before you,
+          their new master. Rome will learn to obey your iron will.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Populist
+      Name: Populist
+      Portrait: {fileID: 308910272, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 75
+      R2: 75
+      R3: 25
+      R4: 25
+      AchivForOpen: People_Overfull
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: IPopulist
+        Title: New Imperator
+        Text: The streets thunder with cheers as you enter the palace. The people
+          raised you high, and now the empire is yours to rule.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Schmer
+      Name: Schmer
+      Portrait: {fileID: -1620811041, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 25
+      R2: 25
+      R3: 75
+      R4: 75
+      AchivForOpen: Senate_Downfull
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: ISchmer
+        Title: New Imperator
+        Text: Behind velvet curtains and sealed letters, your plans unfolded. Now
+          the Senate bows and the imperial crown rests in your hands.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Diplomat
+      Name: Diplomat
+      Portrait: {fileID: 1461979391, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 75
+      R2: 25
+      R3: 25
+      R4: 75
+      AchivForOpen: Senate_Overfull
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: IDiplomat
+        Title: New Imperator
+        Text: Behind velvet curtains and sealed letters, your plans unfolded. Now
+          the Senate bows and the imperial crown rests in your hands.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Great
+      Name: Great
+      Portrait: {fileID: -1831479852, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 75
+      R2: 75
+      R3: 75
+      R4: 75
+      AchivForOpen: Survive_100
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: IGreat
+        Title: New Imperator
+        Text: Behind velvet curtains and sealed letters, your plans unfolded. Now
+          the Senate bows and the imperial crown rests in your hands.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    - ID: Survivor
+      Name: Survivor
+      Portrait: {fileID: -1774660304, guid: 00897e34b0c095f45ae02abfb5cb8cb0, type: 3}
+      R1: 25
+      R2: 25
+      R3: 25
+      R4: 25
+      AchivForOpen: Survive_150
+      StartCardEvent:
+        EventID: StartGame
+        EventImageID: 
+        CharacterID: ISurvivor
+        Title: New Imperator
+        Text: Behind velvet curtains and sealed letters, your plans unfolded. Now
+          the Senate bows and the imperial crown rests in your hands.
+        LeftText: Ave to me!
+        RightText: Ave to me!
+        LeftResources: 00000000000000000000000000000000
+        RightResources: 00000000000000000000000000000000
+        NextLeft: 
+        NextRight: 
+        Weight: 0
+        Condition: 
+        onlyChoiceThisCard: 1
+        WaitToPlay: 0
+    StartTexts: []
+    HitStopPlayerHit: 0.5
+    CameraShakePunch: {x: 1, y: 1, z: 1}
