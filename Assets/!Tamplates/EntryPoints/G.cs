@@ -14,7 +14,7 @@ public static class G
     {
         Debug.Log("G initialized (global systems)");
 
-        _Input = InputFabric.GetOrCreateInpit(true);
+        _Input = InputFabric.GetOrCreateInpit(true, true);
         GameGlobalData.ClearInstance();
         GlobalData = GameGlobalData.Instance.Data;
     }
